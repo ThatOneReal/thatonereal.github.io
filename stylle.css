@@ -1,0 +1,150 @@
+@font-face{
+	font-family: font1;
+	src: url(fonts/Comic_CAT.otf) ;
+}
+@font-face{
+	font-family: font2;
+	src: url(fonts/KarloCham-Brush.otf) ;
+}
+@font-face{
+	font-family: font3;
+	src: url(fonts/Usually-font.otf) ;
+}
+body{
+	margin: 0;
+	font-size: 0;
+}
+#header{
+	height: 50px;
+	top:0;
+	background-color: #189;
+	position: sticky;
+	z-index: 100;
+}
+
+#header .btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: font3;
+	color: #767 ;
+	position: relative;
+	transition-duration: 200ms;
+}
+
+#header .btn:hover{
+	color : #770;
+	background-color: rgba(0 ,0, 0, 0.8);
+}
+#header .btn .menu .cover{
+	position: absolute;
+	height: 10px;
+	left: 0;
+	bottom: 100%;
+	width: 100%;
+
+}
+#header .btn .menu{
+	position: absolute;
+	top: 100%;
+	background-color: rgba(0 ,0, 0, 0.8);
+	padding: 10px;
+	transform: translateY(-50%) scaleY(0);
+	transition-duration: 250ms;
+	border-radius: 5px;
+}
+#header .btn:hover .menu{
+	transform: translateY(0) scaleY(1);
+	top: calc(100% + 10%);
+	
+}
+#header .btn .menu-btn{
+	color: #174;
+	font-size: 20px;
+}
+#header .btn .menu-btn:hover{
+	color: #194;
+	background-color: rgba(0 ,0, 0, 0.8);
+}
+#header .btn .arr{
+	position: relative;
+	height: 20px;
+	width: 20px;
+	margin-top:  5px;
+	margin-bottom:  5px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+#header .btn .arr::before{
+	content: "";
+	display:block;
+	position: absolute;
+	height: 2px;
+	width: 12px;
+	top: calc(50% - 1px);
+	left:0;
+
+	background-color: #109;
+	transform: rotate(-45deg);
+	transition-duration: 200ms;
+}
+#header .btn:hover .arr::before{
+	transform: rotate(45deg);
+	
+}
+
+#header .btn .arr::after{
+	content: "";
+
+	display:block;
+	position: absolute;
+	height: 2px;
+	width: 12px;
+	top: calc(50% - 1px);
+	right: 0;
+	background-color: #109;
+	transform: rotate(45deg);
+	transition-duration: 200ms;
+
+}
+#header .btn:hover .arr::after{
+	transform: rotate(-45deg);
+	
+}
+#header .logo img{
+	height: 100%;
+}
+
+a{
+	text-decoration-line: none;
+}
+#content{
+	background-color: #6e4308;
+	min-height: 100vh ;
+}
+#content .block{}
+#content .block video{
+	width: 100%;
+}
+#footer{
+	padding: 50px;
+	background-color: #111;
+	text-align: center;
+}
+#footer span{
+	color: #aaa;
+	font-size: 16px;
+	margin: 10px;
+
+}
+#footer span a{
+	color:#174;
+}
+#footer span a:hover{
+	text-decoration-line: underline;
+}
+
